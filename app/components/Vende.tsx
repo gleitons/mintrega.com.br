@@ -1,30 +1,18 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import vendese from "../../public/img/vende.gif";
+import Imagem from "./Imagem";
 import Placa from "./Placa";
 export default function Vende() {
   const geraImagem = () => {
-    setImgi (<button className="p-2 bg-red-500 hover:bg-red-400" onClick={fechaImagem}>
-    Fechar
-  </button>)
-    setImgGerada(
-      <>
-      
-        <Image
-          src={vendese}
-          className="rounded-lg my-3"
-          alt="Vende-se este dominio"
-          quality={60}
-        />
-      </>
-    );
+    setImgi (<><button className="p-2 bg-red-500 hover:bg-red-400" onClick={fechaImagem}>Fechar</button> <Imagem /></>  )
+    setGeraTexto ('NÃO DEIXE PRA DEPOIS, COMPRE AGORA!!')
   };
   const fechaImagem = () => {
     setImgi(<button className="p-2 bg-red-500 hover:bg-red-400" onClick={geraImagem}>
     + informações
   </button>)
-  setImgGerada('')
+  setGeraTexto('')
   }
 
   const [imgi, setImgi] = useState(
@@ -32,7 +20,7 @@ export default function Vende() {
       + informações
     </button>
   );
-  const [imgGerada, setImgGerada] = useState("");
+  const [geraTexto, setGeraTexto] = useState('');
   return (
     <div className="md:flex  w-5/6 m-auto mt-4 ">
       <div className="w-full leading-8 bg-slate-300 p-2 mx-3 rounded-md">
@@ -64,7 +52,7 @@ export default function Vende() {
       <div className="w-full">
         <div>
           {imgi}
-          {imgGerada}
+          {geraTexto}
         </div>
 
         <a
