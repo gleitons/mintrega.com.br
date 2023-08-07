@@ -1,5 +1,6 @@
 import Image from "next/image";
 import vendese from "../../public/img/vende.gif"
+import Placa from "./Placa";
 export default function Vende() {
   return (
     <div className="md:flex  w-5/6 m-auto mt-4 ">
@@ -21,7 +22,12 @@ export default function Vende() {
       </div>
       <div className="w-full">
         <a href="https://api.whatsapp.com/send?phone=555180652808&text=Ol%C3%A1,%20gostaria%20de%20adquirir%20o%20dom%C3%ADnio%20https://www.mintrega.com.br/" target="_blank">
-            <Image  src={vendese} className="rounded-lg" alt="Vende-se este dominio" quality={60}/>
+
+            <Placa/>
+            <Placa/>
+            <Placa/>
+
+            {/* <Image  src={vendese} className="rounded-lg" alt="Vende-se este dominio" quality={60}/> */}
         </a>
       </div>
     </div>
