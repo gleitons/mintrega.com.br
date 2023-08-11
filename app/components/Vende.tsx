@@ -4,6 +4,7 @@ import { useState } from "react";
 import Imagem from "./Imagem";
 import Placa from "./Placa";
 export default function Vende() {
+ 
   const geraImagem = () => {
     setImgi (<><button className="p-2 bg-red-500 hover:bg-red-400" onClick={fechaImagem}>Fechar</button> <Imagem /></>  )
     setGeraTexto ('NÃO DEIXE PRA DEPOIS, COMPRE AGORA!!')

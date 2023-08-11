@@ -1,4 +1,4 @@
-import vendese from "../../public/img/vende.gif"
+import vendese from "../img/vende.svg"
 import Image from "next/image"
 export default function Imagem() {
     return (
